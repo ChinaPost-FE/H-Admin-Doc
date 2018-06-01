@@ -1,0 +1,43 @@
+.doc-content {
+    position: relative;
+    padding: 2.2em 0;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 50px;
+    font-size: 15px;
+}
+
+.doc-content h2 {
+    pointer-events: auto;
+    color: #2c3e50;
+    font-weight: 600;
+    padding-bottom: 0.7em;
+    border-bottom: 1px solid #ddd;
+}
+
+.doc-content p {
+    text-indent: 2em;
+}
+
+.doc-content p,
+.doc-content ul,
+.doc-content ol {
+    line-height: 1.6em;
+    margin: 1.2em 0 -1.2em;
+    padding-bottom: 1.2em;
+    position: relative;
+    z-index: 1;
+}
+
+.code-wrapper {
+    width: 620px;
+    height: 580px;
+    overflow: auto;
+}
+
+.s {
+    color: #d44950;
+}
+.g {
+    color: #42b983;
+}
