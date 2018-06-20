@@ -1,0 +1,32 @@
+{
+  "name": "h-admin-doc",
+  "version": "1.0.0",
+  "description": "hAdmin document",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChinaPost-FE/H-Admin-Doc.git"
+  },
+  "keywords": [
+    "hAdmin",
+    "doc"
+  ],
+  "author": "Ronny.Yip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChinaPost-FE/H-Admin-Doc/issues"
+  },
+  "homepage": "https://github.com/ChinaPost-FE/H-Admin-Doc#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  }
+}
