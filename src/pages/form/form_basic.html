@@ -19,18 +19,23 @@
     <link href="../../css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
     <link href="../../css/animate.css" rel="stylesheet">
     <link href="../../css/style.css?v=4.1.0" rel="stylesheet">
+    <!-- 文档 -->
     <link rel="stylesheet" href="../../css/plugins/toastr/toastr.min.css">
     <link rel="stylesheet" href="../../css/plugins/highlight/railscasts.css">
+
+    <!-- 全局js -->
+    <script src="../../js/jquery.min.js?v=2.1.4"></script>
+    <script src="../../js/bootstrap.min.js?v=3.3.6"></script>
 </head>
 
 <body class="fixed-sidebar full-height-layout gray-bg">
-    <div class="gray-bg m-n content animated fadeInRight">
+    <div class="m-n wrapper wrapper-content animated fadeInRight">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>基本表单
-                            <small>简单登录表单示例</small>
+                            <mdall>简单登录表单示例</mdall>
                         </h5>
                         <div class="ibox-tools">
                             <a>
@@ -43,7 +48,7 @@
                     </div>
                     <div class="ibox-content">
                         <div class="row">
-                            <div class="col-sm-12">
+                            <div class="col-md-12">
                                 <form role="form">
                                     <div class="form-group">
                                         <label>用户名</label>
@@ -54,7 +59,7 @@
                                         <input type="password" placeholder="请输入密码" class="form-control">
                                     </div>
                                     <div>
-                                        <button class="btn btn-sm btn-primary pull-right m-t-n-xs" type="submit">
+                                        <button class="btn btn-md btn-primary pull-right m-t-n-xs" type="submit">
                                             <strong>登 录</strong>
                                         </button>
                                         <label>
@@ -66,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>横向表单</h5>
@@ -82,22 +87,22 @@
                     <div class="ibox-content">
                         <form class="form-horizontal">
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">用户名：</label>
+                                <label class="col-md-3 control-label">用户名：</label>
 
-                                <div class="col-sm-8">
+                                <div class="col-md-8">
                                     <input type="email" placeholder="用户名" class="form-control">
                                     <span class="help-block m-b-none">请输入您注册时所填的E-mail</span>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 control-label">密码：</label>
-                                <div class="col-sm-8">
+                                <label class="col-md-3 control-label">密码：</label>
+                                <div class="col-md-8">
                                     <input type="password" placeholder="密码" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-offset-3 col-sm-8">
-                                    <button class="btn btn-sm btn-info" type="submit">登 录</button>
+                                <div class="col-md-offset-3 col-md-8">
+                                    <button class="btn btn-md btn-info" type="submit">登 录</button>
                                 </div>
                             </div>
                         </form>
@@ -106,7 +111,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-8">
+            <div class="col-md-8">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>内联表单</h5>
@@ -139,11 +144,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>弹出表单
-                            <small>弹出框登录示例</small>
+                            <mdall>弹出框登录示例</mdall>
                         </h5>
                         <div class="ibox-tools">
                             <a>
@@ -163,11 +168,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-md-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>所有表单元素
-                            <small>包括自定义样式的复选和单选按钮</small>
+                        <h5>多列表单
                         </h5>
                         <div class="ibox-tools">
                             <a>
@@ -181,60 +185,184 @@
                     <div class="ibox-content">
                         <form method="get" class="form-horizontal">
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">普通</label>
+                                <label class="col-md-2 control-label">账号</label>
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="请输入账号">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">密码</label>
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="请输入密码">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">性别</label>
+                                <div class="col-md-10">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sex" id="male" value="male">男
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sex" id="female" value="female">女
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">选项</label>
+                                <div class="col-md-10">
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox" value="">选项1</label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox" value="">选项1</label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label>
+                                            <input type="checkbox" value="">选项1</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">固话</label>
+                                <div class="col-md-10">
+                                    <div class="form-inline">
+                                        <input type="text" class="form-control" placeholder="区号">
+                                        <label>-</label>
+                                        <input type="text" class="form-control" placeholder="固话号码">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="jia" class="col-md-1 control-label col-md-offset-1">项目甲方</label>
+                                <div class="col-md-2">
+                                    <input class="form-control" type="text" id="jia" />
+                                </div>
+                                <label for="yi" class="col-md-1 control-label">项目乙方</label>
+                                <div class="col-md-2">
+                                    <input class="form-control" type="text" id="yi" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="starttime" class="col-md-1 control-label col-md-offset-1">开始时间</label>
+                                <div class="col-md-2">
+                                    <input class="form-control" type="text" id="starttime" readonly="readonly" />
+                                </div>
+                                <label for="endtime" class="col-md-1 control-label">结束时间</label>
+                                <div class="col-md-2">
+                                    <input class="form-control" type="text" id="endtime" readonly="readonly" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">住址</label>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <select name="province" class="form-control m-b">
+                                                <option>请选择省</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <select name="province" class="form-control m-b">
+                                                <option>请选择市</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <select name="province" class="form-control m-b">
+                                                <option>请选择区</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7 m-l-n">
+                                        <textarea class="form-control" rows="3" placeholder="详细地址"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-4 col-md-offset-2">
+                                    <button class="btn btn-primary" type="submit">保存</button>
+                                    <button class="btn btn-white" type="submit">取消</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>所有表单元素
+                            <mdall>包括自定义样式的复选和单选按钮</mdall>
+                        </h5>
+                        <div class="ibox-tools">
+                            <a>
+                                <i class="fa fa-code"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-copy"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <form method="get" class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-md-2 control-label">普通</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">带说明信息</label>
-                                <div class="col-sm-10">
+                                <label class="col-md-2 control-label">带说明信息</label>
+                                <div class="col-md-10">
                                     <input type="text" class="form-control">
                                     <span class="help-block m-b-none">帮助文本，可能会超过一行，以块级元素显示</span>
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">密码</label>
+                                <label class="col-md-2 control-label">密码</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <input type="password" class="form-control" name="password">
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">提示</label>
+                                <label class="col-md-2 control-label">提示</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <input type="text" placeholder="提示信息" class="form-control">
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">禁用</label>
+                                <label class="col-md-2 control-label">禁用</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <input type="text" disabled="" placeholder="已被禁用" class="form-control">
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">静态控制</label>
+                                <label class="col-md-2 control-label">静态控制</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <p class="form-control-static">497915773@qq.com</p>
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">复选框&amp;单选框
+                                <label class="col-md-2 control-label">复选框&amp;单选框
                                     <br/>
-                                    <small class="text-navy">普通Bootstrap元素</small>
+                                    <mdall class="text-navy">普通Bootstrap元素</mdall>
                                 </label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <div class="checkbox">
                                         <label>
                                             <input type="checkbox" value="">选项1</label>
@@ -251,9 +379,9 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">内联复选框</label>
+                                <label class="col-md-2 control-label">内联复选框</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <label class="checkbox-inline">
                                         <input type="checkbox" value="option1" id="inlineCheckbox1">a</label>
                                     <label class="checkbox-inline">
@@ -264,72 +392,9 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">复选框&amp;单选框
-                                    <br/>
-                                    <small class="text-navy">自定义样式</small>
-                                </label>
+                                <label class="col-md-2 control-label">Select</label>
 
-                                <div class="col-sm-10">
-                                    <div class="checkbox i-checks">
-                                        <label>
-                                            <input type="checkbox" value="">
-                                            <i></i> 选项1</label>
-                                    </div>
-                                    <div class="checkbox i-checks">
-                                        <label>
-                                            <input type="checkbox" value="" checked="">
-                                            <i></i> 选项2（选中）</label>
-                                    </div>
-                                    <div class="checkbox i-checks">
-                                        <label>
-                                            <input type="checkbox" value="" disabled="" checked="">
-                                            <i></i> 选项3（选中并禁用）</label>
-                                    </div>
-                                    <div class="checkbox i-checks">
-                                        <label>
-                                            <input type="checkbox" value="" disabled="">
-                                            <i></i> 选项4（禁用）</label>
-                                    </div>
-                                    <div class="radio i-checks">
-                                        <label>
-                                            <input type="radio" value="option1" name="a">
-                                            <i></i> 选项1</label>
-                                    </div>
-                                    <div class="radio i-checks">
-                                        <label>
-                                            <input type="radio" checked="" value="option2" name="a">
-                                            <i></i> 选项2（选中）</label>
-                                    </div>
-                                    <div class="radio i-checks">
-                                        <label>
-                                            <input type="radio" disabled="" checked="" value="option2">
-                                            <i></i> 选项3（选中并禁用）</label>
-                                    </div>
-                                    <div class="radio i-checks">
-                                        <label>
-                                            <input type="radio" disabled="" name="a">
-                                            <i></i> 选项4（禁用）</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">内联复选框</label>
-
-                                <div class="col-sm-10">
-                                    <label class="checkbox-inline i-checks">
-                                        <input type="checkbox" value="option1">a</label>
-                                    <label class="checkbox-inline i-checks">
-                                        <input type="checkbox" value="option2">b</label>
-                                    <label class="checkbox-inline i-checks">
-                                        <input type="checkbox" value="option3">c</label>
-                                </div>
-                            </div>
-                            <div class="hr-line-dashed"></div>
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">Select</label>
-
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <select class="form-control m-b" name="account">
                                         <option>选项 1</option>
                                         <option>选项 2</option>
@@ -337,7 +402,7 @@
                                         <option>选项 4</option>
                                     </select>
 
-                                    <div class="col-sm-4 m-l-n">
+                                    <div class="col-md-4 m-l-n">
                                         <select class="form-control" multiple="">
                                             <option>选项 1</option>
                                             <option>选项 2</option>
@@ -349,43 +414,43 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group has-success">
-                                <label class="col-sm-2 control-label">验证通过</label>
+                                <label class="col-md-2 control-label">验证通过</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group has-warning">
-                                <label class="col-sm-2 control-label">未填写</label>
+                                <label class="col-md-2 control-label">未填写</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group has-error">
-                                <label class="col-sm-2 control-label">验证未通过</label>
+                                <label class="col-md-2 control-label">验证未通过</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">自定义尺寸</label>
+                                <label class="col-md-2 control-label">自定义尺寸</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <input type="text" placeholder=".input-lg" class="form-control input-lg m-b">
                                     <input type="text" placeholder="Default input" class="form-control m-b">
-                                    <input type="text" placeholder=".input-sm" class="form-control input-sm">
+                                    <input type="text" placeholder=".input-md" class="form-control input-md">
                                 </div>
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">列尺寸</label>
+                                <label class="col-md-2 control-label">列尺寸</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <div class="row">
                                         <div class="col-md-2">
                                             <input type="text" placeholder=".col-md-2" class="form-control">
@@ -401,9 +466,9 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">文本框组</label>
+                                <label class="col-md-2 control-label">文本框组</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <div class="input-group m-b">
                                         <span class="input-group-addon">@</span>
                                         <input type="text" placeholder="用户名" class="form-control">
@@ -431,9 +496,9 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">按钮插件</label>
+                                <label class="col-md-2 control-label">按钮插件</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <div class="input-group m-b">
                                         <span class="input-group-btn">
                                             <button type="button" class="btn btn-primary">搜</button>
@@ -451,9 +516,9 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">带下拉框</label>
+                                <label class="col-md-2 control-label">带下拉框</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <div class="input-group m-b">
                                         <div class="input-group-btn">
                                             <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">操作
@@ -505,9 +570,9 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">分段</label>
+                                <label class="col-md-2 control-label">分段</label>
 
-                                <div class="col-sm-10">
+                                <div class="col-md-10">
                                     <div class="input-group m-b">
                                         <div class="input-group-btn">
                                             <button tabindex="-1" class="btn btn-white" type="button">操作</button>
@@ -549,7 +614,7 @@
                             </div>
                             <div class="hr-line-dashed"></div>
                             <div class="form-group">
-                                <div class="col-sm-4 col-sm-offset-2">
+                                <div class="col-md-4 col-md-offset-2">
                                     <button class="btn btn-primary" type="submit">保存内容</button>
                                     <button class="btn btn-white" type="submit">取消</button>
                                 </div>
@@ -561,34 +626,16 @@
         </div>
     </div>
 
-    <!-- 全局js -->
-    <script src="../../js/jquery.min.js?v=2.1.4"></script>
-    <script src="../../js/bootstrap.min.js?v=3.3.6"></script>
-
     <!-- 第三方插件 -->
     <!-- 进度条 -->
     <script src="../../js/plugins/pace/pace.min.js"></script>
-    <!-- iCheck -->
-    <script src="../../js/plugins/iCheck/icheck.min.js"></script>
-    <!-- toast -->
+
+    <!-- 文档 -->
     <script src="../../js/plugins/toastr/toastr.min.js"></script>
-    <!-- layer -->
     <script src="../../js/plugins/layer/layer.min.js"></script>
-    <!-- highlight -->
     <script src="../../js/plugins/highlight/highlight.min.js"></script>
     <script src="../../js/plugins/webCodeFormat/webCodeFormat.js"></script>
-
-    <!-- 自定义js -->
     <script src="../../js/demo/doc.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('.i-checks').iCheck({
-                checkboxClass: 'icheckbox_square-green',
-                radioClass: 'iradio_square-green',
-            });
-        });
-    </script>
 
 </body>
 
