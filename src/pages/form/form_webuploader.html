@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>hAdmin title</title>
+
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+
+    <link href="../../css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="../../css/animate.css" rel="stylesheet">
+    <link href="../../css/style.css?v=4.1.0" rel="stylesheet">
+
+    <!-- webuploader -->
+    <link rel="stylesheet" type="text/css" href="../../css/plugins/webuploader/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="../../css/demo/webuploader-demo.css">
+
+    <!-- 文档 -->
+    <link rel="stylesheet" href="../../css/plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="../../css/plugins/highlight/railscasts.css">
+
+    <!-- 全局js -->
+    <script src="../../js/jquery.min.js?v=2.1.4"></script>
+    <script src="../../js/bootstrap.min.js?v=3.3.6"></script>
+
+
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg">
+    <div class="wrapper wrapper-content m-n animated fadeInRight">
+      <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+
+                <div class="ibox-content">
+
+                    <h2>
+                            Web Uploader
+                        </h2>
+                    <p>
+                        WebUploader是由Baidu WebFE(FEX)团队开发的一个简单的以HTML5为主，FLASH为辅的现代文件上传组件。在现代的浏览器里面能充分发挥HTML5的优势，同时又不摒弃主流IE浏览器，沿用原来的FLASH运行时，兼容IE6+，iOS 6+, android 4+。两套运行时，同样的调用方式，可供用户任意选用。 采用大文件分片并发上传，极大的提高了文件上传效率。
+                    </p>
+
+                    <div class="alert alert-warning">
+                        官方文档及更多示例请参考：
+                        <a href="http://fex.baidu.com/webuploader/" target="_blank">http://fex.baidu.com/webuploader/</a>
+                    </div>
+                    <p>
+                      需要单独引入以下css
+                      <pre><code class="html"></code>
+&lt;link rel="stylesheet" type="text/css" href="../../css/plugins/webuploader/webuploader.css"&gt;
+                      </code></pre>
+                  </p>
+                  <p>
+                      <a href="../../css/demo/webuploader-demo.css" target="_blank">示例CSS Demo源码查看</a>
+                  </p>
+                    <p>
+                      需要单独引入以下js
+                      <pre><code class="html"></code>
+&lt;script type=&quot;text/javascript&quot;&gt;
+  // 添加全局站点信息
+  var BASE_URL = '../../js/plugins/webuploader';
+&lt;/script&gt;
+&lt;script src=&quot;../../js/plugins/webuploader/webuploader.min.js&quot;&gt;&lt;/script&gt;
+                      </code></pre>
+                  </p>
+                  <p>
+                      <a href="../../js/demo/webuploader-demo.js" target="_blank">示例JS Demo源码查看</a>
+                  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>百度Web Uploader</h5>
+                </div>
+                <div class="ibox-tools">
+                  <a>
+                      <i class="fa fa-code"></i>
+                  </a>
+                  <a>
+                      <i class="fa fa-copy"></i>
+                  </a>
+                </div>
+                <div class="ibox-content">
+                    <div class="page-container">
+                        <p>您可以尝试文件拖拽，使用QQ截屏工具，然后激活窗口后粘贴，或者点击添加图片按钮，来体验此demo.</p>
+                        <div id="uploader" class="wu-example">
+                            <div class="queueList">
+                                <div id="dndArea" class="placeholder">
+                                    <div id="filePicker"></div>
+                                    <p>或将照片拖到这里，单次最多可选300张</p>
+                                </div>
+                            </div>
+                            <div class="statusBar" style="display:none;">
+                                <div class="progress">
+                                    <span class="text">0%</span>
+                                    <span class="percentage"></span>
+                                </div>
+                                <div class="info"></div>
+                                <div class="btns">
+                                    <div id="filePicker2"></div>
+                                    <div class="uploadBtn">开始上传</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 第三方插件 -->
+    <script src="../../js/plugins/pace/pace.min.js"></script>
+
+    <!-- Web Uploader -->
+    <script type="text/javascript">
+      // 添加全局站点信息
+      var BASE_URL = '../../js/plugins/webuploader';
+    </script>
+    <script src="../../js/plugins/webuploader/webuploader.min.js"></script>
+
+    <script src="../../js/demo/webuploader-demo.js"></script>
+
+    <!-- 文档 -->
+    <script src="../../js/plugins/toastr/toastr.min.js"></script>
+    <script src="../../js/plugins/layer/layer.min.js"></script>
+    <script src="../../js/plugins/highlight/highlight.min.js"></script>
+    <script src="../../js/plugins/webCodeFormat/webCodeFormat.js"></script>
+    <script src="../../js/demo/doc.js"></script>
+</body>
+
+</html>
